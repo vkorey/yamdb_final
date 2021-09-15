@@ -30,6 +30,7 @@ class IsAuthorOrAdminOrModerator(BasePermission):
                 return True
         elif request.method in SAFE_METHODS:
             return True
+        return None
 
 
 class IsAdminOrReadOnly(BasePermission):
