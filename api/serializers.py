@@ -2,7 +2,6 @@ from django.contrib.auth import get_user_model
 from django.shortcuts import get_object_or_404
 from rest_framework import serializers, status
 from rest_framework_simplejwt.tokens import AccessToken
-
 from titles.models import Category, Comment, Genre, Review, Title
 
 User = get_user_model()
@@ -54,8 +53,7 @@ class СheckingConfirmationCodeSerializer(serializers.Serializer):
                 {
                     'detail': 'Такого пользователя нет или неверный код '
                     'подтверждения или email'})
-        token = {'token': str(AccessToken.for_user(user))}
-        return token
+        return {'token': str(AccessToken.for_user(user))}
 
 
 class CategorySerializer(serializers.ModelSerializer):

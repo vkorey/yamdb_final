@@ -12,17 +12,16 @@ from rest_framework.pagination import PageNumberPagination
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 from rest_framework_simplejwt.views import TokenObtainPairView
-
 from titles.models import Category, Genre, Review, Title
 
 from .filters import TitlesFilter
 from .permissions import IsAdmin, IsAdminOrReadOnly, IsAuthorOrAdminOrModerator
-from .serializers import (
-    CategorySerializer, CommentSerializer, ForAdminSerializer,
-    ForUserSerializer, GenreSerializer, ReviewSerializer,
-    SendConfirmationCodeSerializer, TitleReadSerializer, TitleWriteSerializer,
-    СheckingConfirmationCodeSerializer,
-)
+from .serializers import (CategorySerializer, CommentSerializer,
+                          ForAdminSerializer, ForUserSerializer,
+                          GenreSerializer, ReviewSerializer,
+                          SendConfirmationCodeSerializer, TitleReadSerializer,
+                          TitleWriteSerializer,
+                          СheckingConfirmationCodeSerializer)
 
 User = get_user_model()
 
