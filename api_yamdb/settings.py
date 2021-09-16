@@ -13,7 +13,7 @@ SECRET_KEY = env.str('SECRET_KEY', default='p&l%385148kslhtyn^##a1)ilz@4zqj=rq&a
 
 DEBUG = env.bool('DEBUG', default=False)
 
-ALLOWED_HOSTS = env.str('ALLOWED_HOSTS')
+ALLOWED_HOSTS = env.str('ALLOWED_HOSTS', default=['*'])
 
 
 INSTALLED_APPS = [
