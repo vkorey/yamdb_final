@@ -1,4 +1,3 @@
-# yamdb_final
 ![yamdb_workflow](https://github.com/vkorey/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ### Проект доступен по адресу http://178.154.227.231/api/v1/
