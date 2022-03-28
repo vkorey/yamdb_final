@@ -1,7 +1,6 @@
 ![yamdb_workflow](https://github.com/vkorey/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
-### Проект доступен по адресу http://178.154.227.231/api/v1/
-### Документация API http://178.154.227.231/redoc/
+
 
 # Учебный проект YAMDB
 Проект YaMDb собирает отзывы (Review) пользователей на произведения (Titles). 
